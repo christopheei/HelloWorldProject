@@ -56,6 +56,7 @@ void Basic::test_case1_data()
     QTest::newRow("point") << "42.01" << 42.01;
     QTest::newRow("virgule") << "42,01" << 0.0;
     QTest::newRow("integer")  << "42" << 42.0;
+	QTest::newRow("withspace") << "42 " << 42.0;
     QTest::newRow("invalid") << "coin coin" << 0.0;
 }
 
